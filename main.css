@@ -30,10 +30,10 @@ body {
 }      
 
 #transition1 {
-	position:absolute;
-	/* Changed the left and top positions */
+	/*position:absolute;
 	left:700px;
- 	top:10px;
+ 	top:10px;*/
+ 	margin : 0 auto;
 }
 
 .card {
