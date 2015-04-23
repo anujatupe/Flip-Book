@@ -1,10 +1,20 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+#assignment_title {
+	text-align: center; 
+	font-size: 48px; 
+	font-weight: bold;
+}
+
 #container {
 	position:absolute;
 }
 
 .container {
-	width: 240px;
-	height: 240px;
+	width: 300px;
+	height: 400px;
 	position: relative;
 	text-align:center;
   -moz-transform-style: preserve-3d;
@@ -13,22 +23,30 @@
 }
 
 .perspective {
-	-webkit-perspective: 400px;
-	-moz-perspective: 400px;
-	-o-perspective: 400px;
-	perspective: 400px;
+	-webkit-perspective: 1900px;
+	-moz-perspective: 1900px;
+	-o-perspective: 1900px;
+	perspective: 1900px;
 }      
 
 #transition1 {
 	position:absolute;
 	/* Changed the left and top positions */
-	left:400px;
- 	top:100px;
+	left:700px;
+ 	top:10px;
 }
 
 .card {
 	z-index: 1;
-	background-color: #5088dc;
+	/*background-color: #5088dc;
+	background-color: #ffffff;*/
+	background: #ffffff; 
+	background: -moz-radial-gradient(center, ellipse cover,  #ffffff 6%, #f4f4d4 50%, #f9f9b1 100%); 
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(6%,#ffffff), color-stop(50%,#f4f4d4), color-stop(100%,#f9f9b1)); 
+	background: -o-radial-gradient(center, ellipse cover,  #ffffff 6%,#f4f4d4 50%,#f9f9b1 100%); 
+	background: -ms-radial-gradient(center, ellipse cover,  #ffffff 6%,#f4f4d4 50%,#f9f9b1 100%);
+	background: radial-gradient(ellipse at center,  #ffffff 6%,#f4f4d4 50%,#f9f9b1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f9f9b1',GradientType=1 ); 
 	position: absolute;
 	width: 99%;
 	height: 99%;
@@ -42,11 +60,16 @@
 
 .card > p { 
 	display: table-cell; 
-	height: 200px; 
+	height: 400px; 
 	vertical-align: middle; 
 	text-align: center; 
-	width: 240px;
+	width: 300px;
+	font-size: 32px;
+	/*-moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;*/
 }
+
 
 .cardBorder {
 	position: absolute;
