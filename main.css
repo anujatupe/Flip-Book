@@ -1,5 +1,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
+	background: url('wooden-texture.jpg');
+	background-size: cover;
 }
 
 #assignment_title {
@@ -61,6 +63,20 @@ body {
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
+  cursor: pointer; 
+  cursor: hand; 
+}
+
+.cover {
+	background: #6d5d47; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #6d5d47 0%, #6d4712 50%, #703000 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#6d5d47), color-stop(50%,#6d4712), color-stop(100%,#703000)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #6d5d47 0%,#6d4712 50%,#703000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #6d5d47 0%,#6d4712 50%,#703000 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #6d5d47 0%,#6d4712 50%,#703000 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #6d5d47 0%,#6d4712 50%,#703000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d5d47', endColorstr='#703000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 .card > p { 
